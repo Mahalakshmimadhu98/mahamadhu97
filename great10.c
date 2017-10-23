@@ -1,15 +1,19 @@
 #include<stdio.h>
 void main()
 {
-int a[15],i,sum=0;
+int a[15],i,big;
 printf("Enter 10 numbers");
 for(i=1;i<=10;i++)
 {
 scanf("%d",&a[i]);
 }
+  big=a[0];
 for(i=0;i<10;i++)
 {
-sum=sum+a[i];
+if(a[i]>big)
+{
+  big=a[i];
 }
-printf("sum is: %d",sum);
+}
+  printf("Biggest %d",big);
 }
