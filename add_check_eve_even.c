@@ -7,10 +7,10 @@ scanf("%d%d",&a,&b);
 sum=a+b;
 if(sum%2==0)
 {
-printf("\n Odd");
+printf("\n Even");
 }
 else
 {
-printf("\n Even");
+printf("\n odd");
 }
 }
