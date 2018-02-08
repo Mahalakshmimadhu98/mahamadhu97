@@ -4,7 +4,7 @@
 void main()
 {
 char st[50],st1[50],st2[50],s;
-int i=0,j=0,k=0,l=0,a=0,b=0;
+int i=0,j=0,k=0,l=0,m=0,a=0,b=0;
 printf("\nEnter string:");
 scanf("%s",st);
 l=strlen(st);
@@ -14,12 +14,12 @@ while(i<(l/2))
     j++;
     i++;
 }
-i=0;
-while(i<l)
+m=(l/2)+1;
+while(m<l)
 {
-    st2[k]=st[i];
+    st2[k]=st[m];
     k++;
-    i++;
+    m++;
 }
 s=st[l/2];
 a=atoi(st1);
