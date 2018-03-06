@@ -7,29 +7,25 @@ printf("\nEnter n,k value");
 scanf("%d%d",&n,&k);
 printf("\nEnter %d elements",n);
 
-for(i=0;i<n;i++)
+for(i=1;i<=n;i++)
 {
     scanf("%d",&a[i]);
 }
-for(i=0;i<n;i++)
+    i=1;
+for(j=k+1;j<=n;j++)
 {
-    b[i]=a[i];
-}
-i=0;
-for(j=k;j<n;j++)
-{
-    a[j]=b[i];
+    b[i]=a[j];
     i++;
 }
-m=k;
-for(l=0;l<m;l++)
+m=n-k+1;
+for(l=1;l<=k;l++)
 {
-    a[l]=b[k];
-    k++;
+    b[m]=a[l];
+    m++;
 }
 printf("After %d shift:",k);
-for(i=0;i<n;i++)
+for(i=1;i<=n;i++)
 {
-    printf("%d\t",a[i]);
+    printf("%d\t",b[i]);
 }
 }
