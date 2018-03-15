@@ -2,16 +2,22 @@
 #include<math.h>
 void main()
 {
-int n,s;
+int n,i,flag=0;
 printf("\nEnter a number");
 scanf("%d",&n);
-s=sqrt(n);
-if(s==(n*n))
+for(i=1;i<(n/2);i++)
 {
-printf("\nYes");
+if(n==(i*i))
+{
+flag=1;
+}
+}
+if(flag==1)
+{
+    printf("\nYes");
 }
 else
 {
-printf("\nNo");
+    printf("\nNo");
 }
 }
